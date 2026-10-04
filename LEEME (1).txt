@@ -1,0 +1,32 @@
+CARTA SECRETA — GUÍA RÁPIDA
+
+ARCHIVOS
+- index.html: estructura y texto visible antes de abrir.
+- estilos.css: apariencia.
+- script.js: código y mensaje que personalizas.
+
+PERSONALIZAR SIN COMPARTIR TU MENSAJE EN EL CHAT
+1. Abre script.js con Visual Studio Code o el Bloc de notas.
+2. Cambia ACCESS_CODE por el código que le darás a ella.
+3. Reemplaza el texto de SECRET_MESSAGE por tu mensaje.
+4. Guarda el archivo.
+5. Abre index.html en tu navegador para probarlo.
+
+PUBLICAR CON GITHUB PAGES
+1. Inicia sesión en GitHub y crea un repositorio nuevo, por ejemplo carta-secreta.
+2. Sube index.html, estilos.css y script.js al repositorio.
+3. Entra a Settings > Pages.
+4. En Build and deployment, elige Deploy from a branch.
+5. Selecciona la rama main y la carpeta /(root); guarda.
+6. Espera a que GitHub Pages publique la web. La dirección tendrá una forma parecida a:
+   https://TU-USUARIO.github.io/carta-secreta/
+   Usa la URL exacta que te muestre GitHub.
+
+WHATSAPP
+Puedes enviar algo como:
+"Tengo algo para ti 👀 Abre este enlace cuando tengas un momento. El código te lo paso aparte. 🤍"
+La vista previa muestra solo el título y la descripción de la página; nunca pongas tu mensaje secreto en el título o la descripción.
+
+IMPORTANTE SOBRE PRIVACIDAD
+Esta versión es una maqueta estática. El código de acceso y el mensaje están dentro de script.js y cualquiera con conocimientos básicos puede inspeccionarlos; el código no protege realmente el contenido. Tampoco impide que una persona vuelva a abrir el enlace, tome capturas o comparta el código.
+Si necesitas que el mensaje sea verdaderamente privado y de un solo uso, se necesita un servicio con validación en servidor y almacenamiento del estado de lectura. GitHub Pages por sí solo no ofrece esa función.

@@ -1,0 +1,107 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090807">
+  <title>Una carta para ti</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos (2).css">
+</head>
+<body>
+
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <div class="grain"></div>
+
+  <main class="page">
+    <header class="eyebrow">
+      ✦ CORRESPONDENCIA PRIVADA ✦
+    </header>
+
+    <section class="hero">
+      <p class="kicker">HAY COSAS QUE MERECEN DECIRSE</p>
+      <h1>Una carta <em>para ti.</em></h1>
+      <p class="intro">
+        No todo lo que sentimos encuentra el momento perfecto.<br>
+        Tal vez esta sea mi manera de encontrarlo.
+      </p>
+    </section>
+
+    <section class="scene">
+      <span class="spark s1">✧</span>
+      <span class="spark s2">✦</span>
+
+      <div class="envelope" id="envelope">
+        <div class="back"></div>
+
+        <article class="letter">
+          <div class="letter-inner">
+            <span class="star">✦</span>
+            <p class="label">SOLO PARA TUS OJOS</p>
+            <div class="message" id="message"></div>
+            <p class="signature">
+              Con cariño,<br>
+              <span>un admirador secreto</span>
+            </p>
+          </div>
+        </article>
+
+        <div class="flap"></div>
+        <div class="front"></div>
+        <div class="seal">V</div>
+      </div>
+    </section>
+
+    <section class="access" id="access">
+      <span class="card-star">✧</span>
+      <h2>Hay algo para ti, Denis.</h2>
+      <p>Una pequeña clave separa este momento de ti.</p>
+
+      <form id="form">
+        <label class="sr" for="code">Código secreto</label>
+
+        <div class="input-wrap">
+          <input
+            id="code"
+            type="password"
+            inputmode="numeric"
+            maxlength="4"
+            placeholder="Código de 4 dígitos"
+            autocomplete="off"
+          >
+          <button id="reveal" type="button" aria-label="Mostrar código">◉</button>
+        </div>
+
+        <button class="gold-button" type="submit">
+          Descubrir mi carta <span>↗</span>
+        </button>
+
+        <p class="error" id="error"></p>
+      </form>
+
+      <p class="note">Tómate un momento. No hay prisa.</p>
+    </section>
+
+    <section class="after hidden" id="after">
+      <span class="card-star">✦</span>
+      <h2>Un pequeño momento para ti.</h2>
+      <p>Gracias por llegar hasta aquí.</p>
+      <button id="close" class="text-button" type="button">
+        Volver al sobre
+      </button>
+    </section>
+
+    <footer>
+      <span>HECHA CON INTENCIÓN</span>
+      <i>✦</i>
+      <span>UN SECRETO BONITO</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
