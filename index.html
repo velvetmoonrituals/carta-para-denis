@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Una carta especial te está esperando.">
+  <meta property="og:title" content="Una carta para ti">
+  <meta property="og:description" content="Hay algo esperando por ti. Abre cuando tengas un momento.">
+  <meta name="theme-color" content="#090807">
+  <title>Una carta para ti</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <main class="shell">
+    <div class="eyebrow"><span></span> CORRESPONDENCIA PRIVADA <span></span></div>
+    <h1>Una carta <em>para ti.</em></h1>
+    <p class="intro">Hay cosas que se disfrutan más cuando se descubren poco a poco.</p>
+
+    <section class="scene" aria-live="polite">
+      <div class="glow"></div>
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <div class="letter" id="letter">
+          <div class="letter-inner">
+            <div class="letter-mark">✦</div>
+            <p class="letter-kicker">SOLO PARA TUS OJOS</p>
+            <div id="letterMessage" class="message">Tu mensaje aparecerá aquí.</div>
+            <div class="signature">— Un secreto —</div>
+          </div>
+        </div>
+        <div class="env-left"></div><div class="env-right"></div>
+        <div class="env-front"></div>
+        <div class="seal" id="seal">♥</div>
+      </div>
+    </section>
+
+    <section id="gate" class="panel">
+      <label for="accessCode">Esta carta está cerrada con un código</label>
+      <div class="input-row">
+        <input id="accessCode" type="password" placeholder="Escribe el código" autocomplete="off" maxlength="64">
+        <button id="revealCode" class="icon-button" type="button" aria-label="Mostrar código">◉</button>
+      </div>
+      <p id="error" class="error" role="status"></p>
+      <button id="openLetter" class="gold-button" type="button">Abrir la carta <span>↗</span></button>
+      <p class="hint">Busca un lugar tranquilo y tómate tu tiempo.</p>
+    </section>
+
+    <section id="after" class="panel hidden">
+      <p class="success-mark">✦</p>
+      <p class="after-title">La carta está abierta.</p>
+      <p class="hint">Gracias por tomarte un momento para leerla.</p>
+      <button id="closeLetter" class="text-button" type="button">Cerrar la carta</button>
+    </section>
+
+    <footer><span>HECHA CON INTENCIÓN</span><span>✦</span><span>GUARDA ESTE MOMENTO</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
